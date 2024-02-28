@@ -25,9 +25,6 @@ $H_A$ There is a statistical difference between at least two races with the freq
 
 Looking at my data and considering the problem question. We are comparing to categorical data types. Therefore, we will use the cat-cat helper file to answer the question in hand.
 
-
-
-
 ```{r include=FALSE,echo=FALSE}
 source(file="fisherXY.R")
 require(tidyverse)
@@ -46,6 +43,17 @@ mydata <- na.omit(mydata)
 ```
 
 
+#Plots
+
+```{r}
+barchartGC(~race + eatout,data=mydata)
+barchartGC(~race + eatout,data=mydata, type="percent")
+
+```
+
+From the previous data, we can see that the overall frequency of the white race to eat out is higher than the black, and the other races. The black race has the highest frequency for not eating out,
+compared to the white and the other races. All the other
+races represented in the above graph had a median statistics compared to the date fro the white and the black races.
 
 
 
