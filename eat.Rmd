@@ -56,7 +56,14 @@ compared to the white and the other races. All the other
 races represented in the above graph had a median statistics compared to the date fro the white and the black races.
 
 
+#Numerical 
 
 
+```{r}
+table1 <- xtabs(~race + eatout,data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
 
+The white race is eating at the percentage of 82.83%, the black race is eating at the percentage of 68.75, and the other races are eating at the percentage of 77.78%.
 
